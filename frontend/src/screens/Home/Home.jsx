@@ -13,7 +13,7 @@ const Home = ({ language, toggleCurrentLanguage }) => {
 
   const postQuestion = async (question, endpoint) => {
     const response = await fetch(
-      `${process.env.REACT_APP_API_KEY}${endpoint}`,
+      `${process.env.REACT_APP_BACKEND_URL}${endpoint}`,
       {
         method: "POST",
         headers: {
