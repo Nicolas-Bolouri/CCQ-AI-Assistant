@@ -1,12 +1,10 @@
 # CCQ AI Assistant 
 
-Built in collaboration with Benjamin Morrison (civil engineering student), the CCQ AI Assisant is a simple tool for civil engineers in Quebec looking to validate their project descriptions against Quebec's Construction Code (the CCQ) or simply ask questions about the document. Built using Langchain embeddings for context integration and Open AI's API for 
+Built in collaboration with Benjamin Morrison (civil engineering student), the CCQ AI Assisant is a simple tool for civil engineers in Quebec looking to validate their project descriptions against Quebec's Construction Code (the CCQ) or simply ask questions about the document. Built using Langchain embeddings for context integration and Open AI's API, the web app offers assistance for both the french and english versions of the document.
 
 ## Table of Contents 
 
 - [Built With](#built-with)
-- [History & Awards](#history--awards)
-- [Deployment](#deployment)
 - [Getting Started](#getting-started)
 
 
@@ -19,17 +17,6 @@ Built in collaboration with Benjamin Morrison (civil engineering student), the C
 - Langchain
 
 
-## History & Awards 
-
-- Developed in 2022 with vanilla JavaScript, HTML, and CSS in the context of the 2022 McGill Code Jam 12 Hackathon
-- Winner of the Matrox Video Multimedia Award for the best use of multimedia against 56 other teams
-- Refactored in 2023 using NextJs, ExpressJs, and deployed on Heroku
-
-
-## Deployment 
-
-The app is deployed using Heroku at: https://instantutor-184f552213d8.herokuapp.com/
-
 ## Getting Started 
 
 1. **Clone the Repository**
@@ -37,25 +24,22 @@ The app is deployed using Heroku at: https://instantutor-184f552213d8.herokuapp.
 
 2. **Install Dependencies**
     ```bash
+    cd backend
+    npm install
+    cd ../frontend
     npm install
     ```
 
 3. **Configure**
-    - Update the `.env` file with your server api endpoint and your Agora project keys (www.agora.io)
+    - Create a `.env` file in both the backend and frontend directories
+        - For the backend directory, add your OpenAI API key as `OPENAI_API_KEY`
+        - For the frontend directory, add your backend url as `REACT_APP_API_KEY` (localhost:8080 if running locally)
 
 4. **Run the App**
-    - First, run the backend server:
     ```bash
-    npm run start-server 
-    ```
-    
-     - Second, build the app:
-    ```bash
-    npm run build 
-    ```
-
-      - Third, run the frontend:
-    ```bash
-    npm run start  
+    cd backend
+    npm run start 
+    cd ../frontend
+    npm run start
     ```
 
