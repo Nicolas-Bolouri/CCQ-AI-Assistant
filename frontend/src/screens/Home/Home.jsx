@@ -13,7 +13,7 @@ const Home = ({ language, toggleCurrentLanguage }) => {
 
   const postQuestion = async (question, endpoint) => {
     const response = await fetch(
-      ` https://ccq-ai-backend-02929feeb6a1.herokuapp.com/question/${endpoint}`,
+      `${process.env.REACT_APP_API_KEY}${endpoint}`,
       {
         method: "POST",
         headers: {
