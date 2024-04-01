@@ -1,6 +1,6 @@
 # CCQ AI Assistant
 
-Developed in collaboration with Benjamin Morrison, a civil engineering student, the CCQ AI Assistant is an intuitive tool designed for civil engineers in Quebec. It enables users to validate their project descriptions against the Quebec Construction Code (the CCQ) or to ask questions about the document. The tool integrates Langchain's LLaMA embeddings for context comprehension and uses the OpenAI API for processing queries, supporting both the French and English versions of the CCQ. This web application aims to streamline the process of adhering to construction standards, ensuring compliance and safety in civil engineering projects.
+Developed in collaboration with Benjamin Morrison, a civil engineering student, the CCQ AI Assistant is an simple tool designed for civil engineers in Quebec. It enables users to validate their project descriptions against the Quebec Construction Code (the CCQ) or to ask questions about the document. The tool integrates Langchain's LLaMA embeddings for context comprehension and uses the OpenAI API for processing queries, supporting both the French and English versions of the CCQ. This web application aims to streamline the process of adhering to construction standards, ensuring compliance and safety in civil engineering projects.
 
 ## Table of Contents
 
