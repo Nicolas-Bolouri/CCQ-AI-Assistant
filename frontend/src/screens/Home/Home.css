@@ -1,0 +1,96 @@
+/* Base layout and styling */
+.home-screen {
+  text-align: center;
+  padding: 20px;
+  margin: auto;
+  width: 90%;
+}
+
+/* Title section styling */
+.title-section {
+  margin-bottom: 40px;
+}
+
+.title-section h1,
+.title-section p {
+  margin: 10px;
+  padding: 5px;
+}
+
+/* Text area section styling */
+.text-area-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+/* Text area container styling */
+.text-area-container {
+  width: 45%;
+  margin: 10px;
+  max-width: 700px;
+}
+
+.text-area-container h2 {
+  margin-bottom: 20px;
+}
+
+.text-area-container textarea {
+  width: 100%;
+  height: 150px;
+  padding: 10px;
+  margin: -10px 0 10px;
+  resize: vertical;
+}
+
+.text-area-container button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.text-area-container button:hover {
+  background-color: #0056b3;
+}
+
+/* Language toggle styling */
+.language-toggle {
+  background-color: #f2f2f2;
+  padding: 12px;
+  border-radius: 8px;
+  margin: 20px auto;
+  width: fit-content;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.language-toggle button {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 10px;
+}
+
+.language-toggle button:hover {
+  background-color: #0056b3;
+}
+
+.language-toggle p {
+  margin: 0;
+  color: #333;
+  vertical-align: middle;
+}
+
+@media (max-width: 600px) {
+  .text-area-container {
+    width: 100%;
+  }
+}
