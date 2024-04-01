@@ -5,8 +5,10 @@ const fs = require("fs");
 const { OpenAI } = require("langchain/llms/openai");
 const { RetrievalQAChain, loadQARefineChain } = require("langchain/chains");
 
-const OPENAI_API_KEY = "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";
-const model = new OpenAI({ openAIApiKey: OPENAI_API_KEY, temperature: 0.9 });
+const model = new OpenAI({
+  openAIApiKey: process.env.OPENAI_API_KEY,
+  temperature: 0.9,
+});
 
 async function generateAndStoreEmbeddings() {
   // Generate embeddings for English
